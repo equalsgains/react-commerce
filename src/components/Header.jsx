@@ -54,11 +54,10 @@ function Header() {
                         {/* shopping basket icon */}
                         <ShoppingBasketIcon />
                         {/* Number of items in the basket */}
-                        <span>0</span>
+                        <span className="header__optionLineTwo header__basketCount">0</span>
                     </div>
                 </Link>
             </div>
-            {/* basket icon with number */}
 
         </nav>
     );
