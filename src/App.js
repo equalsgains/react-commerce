@@ -4,10 +4,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link,
 } from "react-router-dom";
 
 import './components/Header';
-import Navbar from './components/Header';
+import Header from './components/Header';
 
 function App () {
   return (
@@ -24,7 +25,7 @@ function App () {
         </Route>
 
         <Route path="/">
-          <Navbar />
+          <Header />
         </Route>
 
       </Switch>
