@@ -4,32 +4,33 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from "react-router-dom";
 
-import './components/Header';
 import Header from './components/Header';
+import Home from './components/Home';
 
-function App () {
+function App() {
   return (
     <Router>
       <div className="app">
-      <Switch>
+        <Switch>
 
-        <Route path="/checkout">
-          <h1>Checkout</h1>
-        </Route>
+          <Route path="/checkout">
+            <Header />
+            <h1>Checkout</h1>
+          </Route>
 
-        <Route path="/login">
-          <h1>Login</h1>
-        </Route>
+          <Route path="/login">
+            <h1>Login</h1>
+          </Route>
 
-        <Route path="/">
-          <Header />
-        </Route>
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
 
-      </Switch>
-    </div>
+        </Switch>
+      </div>
     </Router>
   );
 }
